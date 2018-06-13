@@ -1,0 +1,49 @@
+body {
+    background-color: lightgray;
+}
+
+#main-title {
+    border: 2px solid black;
+}
+
+#sub-title {
+    border: 2px solid black;
+}
+
+#characters {
+    border: 2px solid black;
+}
+
+#char1, #char2, #char3, #char4 {
+    border: 2px solid black;
+    width: 275px;
+    height: 200px;
+}
+
+#player {
+    border: 2px solid black;
+}
+
+#buttons {
+    border: 2px solid black;   
+}
+
+#attack {
+    border: 2px solid black;
+}
+
+#btn-attack {
+
+}
+
+#reset {
+    border: 2px solid black;
+}
+
+#btn-reset {
+
+}
+
+#defender {
+    border: 2px solid black;
+}
