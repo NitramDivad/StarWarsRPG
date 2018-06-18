@@ -1,49 +1,145 @@
 body {
-    background-color: lightgray;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    color: black;
 }
 
 #main-title {
-    border: 2px solid black;
+    margin: 0;
+    padding: 0;
 }
 
 #sub-title {
-    border: 2px solid black;
+    margin: 0;
+    padding: 0;
 }
 
-#characters {
-    border: 2px solid black;
+#player-group {
+    margin-bottom: 15px;
+    padding: 0;
 }
 
-#char1, #char2, #char3, #char4 {
-    border: 2px solid black;
+.characters {
+    padding: 0;
+    margin: 0;
+    background-color: green;
+}
+
+
+#img-char0, #img-char1, #img-char2, #img-char3 {
+    margin: 0;
+    padding: 0;
+    width: 275px;
+    height: 200px;
+    text-align: center;
+}
+
+#char0, #char1, #char2, #char3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#attack {
+    height: 40px;
+}
+
+#btn-attack {
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#restart {
+    height: 40px;
+}
+
+#btn-restart {
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#playerStatus {
+    padding: 0;
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: oldlace;
+    text-align: center;
+}
+
+#player-img {
     width: 275px;
     height: 200px;
 }
 
-#player {
-    border: 2px solid black;
+#player-img[src=''], #player-img:not([src]) {
+    opacity: 0;
 }
 
-#buttons {
-    border: 2px solid black;   
+#enemyStatus {
+    text-align: left;
+    padding: 0;
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: oldlace;
+    text-align: center;
 }
 
-#attack {
-    border: 2px solid black;
+#enemy-img {
+    width: 275px;
+    height: 200px;
 }
 
-#btn-attack {
-
+#enemy-img[src=''], #enemy-img:not([src]) {
+    opacity: 0;
 }
 
-#reset {
-    border: 2px solid black;
+#player, #enemy {
+    height: 240px;
+    margin: 0;
+    padding: 0;
+    color: lightyellow;
+    font-size: 18px;
 }
 
-#btn-reset {
-
+#messageArea {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-#defender {
-    border: 2px solid black;
+#playerAttack, #enemyCntrAttack, #playerHealth, #enemyHealth{
+    margin: 0;
+}
+
+#progPlayerHealth, #progEnemyHealth {
+    color: black;
+}
+
+.progress {
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+footer {
+    color: white;
+}
+
+#statsArea0, #statsArea1, #statsArea2, #statsArea3 {
+    background: rgba(255, 255, 255, 0.15);
+    height: 75px;
+    position: absolute;
+    color: lightsteelblue;
+    bottom: 0;
+    font-size: 12px;
+    text-align: left;
+    margin: 0;
+    padding: 5px;
+    width: 50%;
+    left: 5px;
 }
