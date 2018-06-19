@@ -40,6 +40,11 @@ body {
     padding: 0;
 }
 
+#char0:hover, #char1:hover, #char2:hover, #char3:hover {
+    cursor: pointer;
+}
+
+
 #attack {
     height: 40px;
 }
@@ -142,4 +147,8 @@ footer {
     padding: 5px;
     width: 50%;
     left: 5px;
+}
+
+button:hover {
+    cursor: pointer;
 }
