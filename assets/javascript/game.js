@@ -1,9 +1,9 @@
 var idxPlayer = 0,
     idxEnemy = 0,
     rpg = {
-        arrPlayersDB: [],
-        arrFighters: [],
-        arrEnemies: [],
+        arrPlayersDB: [],   //holds as setup the 4 potential players
+        arrFighters: [],    //holds the current 2 fighters in the duel
+        arrEnemies: [],     //holds after selection of player the 3 potential enemies
         playerSelected: false,
         enemySelected: false,
 
@@ -14,7 +14,7 @@ var idxPlayer = 0,
 
             $.each(rpg.arrPlayersDB, function (idx, playerInfo) {
                 if (playerInfo.id === idxPlayer) {
-                    rpg.arrFighters.push({id: playerInfo.id,
+                    rpg.arrFighters.push({id: playerInfo.id,         //Player will always have "index" of 0
                                           player: playerInfo.player,
                                           health: playerInfo.health,
                                           attackPower: playerInfo.attackPower,
@@ -22,7 +22,7 @@ var idxPlayer = 0,
                                           photo: playerInfo.photo});
                 }
                 else {
-                    rpg.arrEnemies.push({id: playerInfo.id,         //Player will always have "index" of 0
+                    rpg.arrEnemies.push({id: playerInfo.id,
                                          player: playerInfo.player,
                                          health: playerInfo.health,
                                          attackPower: playerInfo.attackPower,
@@ -68,7 +68,7 @@ var idxPlayer = 0,
             else if (rpg.arrFighters.length === 1)
                 $("#messageArea").text("No Enemy here.  Please Choose an Enemy!");
             else {
-                rpg.DuelTime();
+                rpg.BeginDuel();
                 rpg.AttackPower();
             }
         },
@@ -85,7 +85,7 @@ var idxPlayer = 0,
                 rpg.arrFighters[1].health = 0;
         },
 
-        DuelTime: function() {
+        BeginDuel: function() {
             rpg.ReduceEnemyHealth();
             UpdateEnemyStats();
 
